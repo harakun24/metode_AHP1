@@ -12,7 +12,7 @@
     <!-- Custom fonts for this template-->
     <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
     <link href="/assets/css/font.css" rel="stylesheet" />
-
+    <link href="/assets/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <!-- Custom styles for this template-->
     <link href="/assets/css/sb-admin-2.min.css" rel="stylesheet" />
 </head>
@@ -56,8 +56,8 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!-- <h6 class="collapse-header">Custom Components:</h6> -->
-                        <a class="collapse-item" href="buttons.html">Kriteria</a>
-                        <a class="collapse-item" href="cards.html">Alternatif</a>
+                        <a class="collapse-item" href="<?= route_to('kriteria'); ?>">Kriteria</a>
+                        <a class="collapse-item" href="<?= route_to('alternatif'); ?>">Alternatif</a>
                     </div>
                 </div>
             </li>
@@ -170,8 +170,9 @@
 
     <!-- Bootstrap core JavaScript-->
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="/assets/vendor/datatables/dataTables.bootstrap4.min.js"></script>
     <!-- Core plugin JavaScript-->
     <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 

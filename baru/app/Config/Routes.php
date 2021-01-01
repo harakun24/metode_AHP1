@@ -36,7 +36,23 @@ $routes->group('Admin', function ($routes) {
 	$routes->add('proses', 'Admin::prosesLogin', ['as' => 'proses_admin']);
 	$routes->add('logout', 'Admin::logout', ['as' => 'logout_admin']);
 });
+$routes->group('ahp', function ($routes) {
+	$routes->add('kriteria', 'Ahp::kriteria', ['as' => 'kriteria']);
+	$routes->post('kriteria/tambah', 'Ahp::add_kriteria', ['as' => 'add_kriteria']);
+	$routes->add('kriteria/cari/(:num)', 'Ahp::get_kriteria/$1');
+	$routes->post('kriteria/edit/(:num)', 'Ahp::edit_kriteria/$1');
+	$routes->add('kriteria/hapus/(:num)', 'Ahp::del_kriteria/$1');
 
+	$routes->add('alternatif', 'Ahp::alternatif', ['as' => 'alternatif']);
+	$routes->post('alternatif/tambah', 'Ahp::add_alternatif', ['as' => 'add_alternatif']);
+	$routes->add('alternatif/cari/(:num)', 'Ahp::get_alternatif/$1');
+	$routes->post('alternatif/edit/(:num)', 'Ahp::edit_alternatif/$1');
+	$routes->add('alternatif/hapus/(:num)', 'Ahp::del_alternatif/$1');
+
+	$routes->add('cek_kriteria', 'Ahp::cek_kriteria');
+	$routes->add('kriteria/nilai', 'Ahp::nilai_kriteria');
+	$routes->add('kriteria/update/(:num)/(:any)', 'Ahp::update_nk/$1/$2');
+});
 /**
  * --------------------------------------------------------------------
  * Additional Routing
