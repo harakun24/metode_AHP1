@@ -42,16 +42,20 @@ $routes->group('ahp', function ($routes) {
 	$routes->add('kriteria/cari/(:num)', 'Ahp::get_kriteria/$1');
 	$routes->post('kriteria/edit/(:num)', 'Ahp::edit_kriteria/$1');
 	$routes->add('kriteria/hapus/(:num)', 'Ahp::del_kriteria/$1');
+	$routes->add('kriteria/nilai', 'Ahp::nilai_kriteria');
+	$routes->add('kriteria/update/(:num)/(:any)', 'Ahp::update_nk/$1/$2');
 
 	$routes->add('alternatif', 'Ahp::alternatif', ['as' => 'alternatif']);
 	$routes->post('alternatif/tambah', 'Ahp::add_alternatif', ['as' => 'add_alternatif']);
 	$routes->add('alternatif/cari/(:num)', 'Ahp::get_alternatif/$1');
 	$routes->post('alternatif/edit/(:num)', 'Ahp::edit_alternatif/$1');
 	$routes->add('alternatif/hapus/(:num)', 'Ahp::del_alternatif/$1');
+	$routes->add('alternatif/nilai', 'Ahp::nilai_alternatif');
+	$routes->add('alternatif/update/(:num)/(:any)', 'Ahp::update_na/$1/$2');
 
 	$routes->add('cek_kriteria', 'Ahp::cek_kriteria');
-	$routes->add('kriteria/nilai', 'Ahp::nilai_kriteria');
-	$routes->add('kriteria/update/(:num)/(:any)', 'Ahp::update_nk/$1/$2');
+	$routes->add('cek_alternatif', 'Ahp::cek_alter');
+	$routes->add('get_nilai/(:num)', 'Ahp::get_nilaiA/$1');
 });
 /**
  * --------------------------------------------------------------------
