@@ -433,7 +433,6 @@ class Ahp extends BaseController
             }
 
             $total = $this->rnk->orderBy('total', 'DESC')->findAll();
-
             //matrik pasang banding kriteria
             return view('ahp/hasil', [
                 'kriteria' => $kriteria,
