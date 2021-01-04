@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title>Login Sistem</title>
-
+    <link rel="shortcut icon" href="/assets/img/d.png" type="image/x-icon">
     <!-- Custom fonts for this template-->
     <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="/assets/css/font.css" rel="stylesheet">

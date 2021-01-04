@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <link rel="shortcut icon" href="/assets/img/d.png" type="image/x-icon">
 
 
     <!-- Custom fonts for this template-->
@@ -25,9 +26,9 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <i class="fas fa-chart-bar"></i>
+                    <img src="/assets/img/d.png" width="60" alt="">
                 </div>
-                <div class="sidebar-brand-text mx-3">sistem AHP </div>
+                <div class="sidebar-brand-text mx-3">SMKN 1 LAMBU </div>
             </a>
 
             <!-- Divider -->
